@@ -4,86 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Building a Desktop PC</title>
-    <script src="script.js"></script>
     <link href="styles.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+          rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header id="header">
-        <h1>Building a Desktop PC</h1>
-        <nav>
-            <ol>
-                <li><a href="#overview">Overview</a></li>
-                <li><a href="#cpu">CPU</a></li>
-                <li><a href="#gpu">GPU</a></li>
-                <li><a href="#memory">Memory</a></li>
-                <li><a href="#cooling">Cooling</a></li>
-                <li><a href="#case">Case</a></li>
-                <li><a href="#psu">PSU</a></li>
-                <li><a href="#motherboard">Motherboard</a></li>
-                <li><a href="#my-pc">My PC</a></li>
-                <li><a href="#quiz">Quiz</a></li>
-            </ol>
-        </nav>
-    </header>
-    
-    <main>
-        <section id="overview">
-            <h2>Overview</h2>
-            <p>This webpage offers an introduction to the world of custom PC building. It provides a brief overview of all the parts in a desktop computer.</p>
-            <p>Before we start, let's talk about the advantages of building a custom PC.</p>
-            <p>Building your own desktop PC is much cheaper than buying a prebuilt. You will be able to source everything yourself and customize your desktop to your liking. You can customize every single component. If you want a green case or even green braided PCIE cables, you can have them in your PC. Or, more practically, you can find better performaning fans online and avoid the RGB chaos in prebuilts. </p>
-            <p>Additionally, a desktop computer is like a LEGO castle. It's not hard to build, and it's incredibly fun and rewarding. You will also learn a lot about computers along the way.</p>
-            <p>Now, let's start!</p>
-        </section>
+<header id="header">
+    <h1>Building a Desktop PC</h1>
+    <nav>
+        <ol>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#cpu">CPU</a></li>
+            <li><a href="#gpu">GPU</a></li>
+            <li><a href="#memory">Memory</a></li>
+            <li><a href="#cooling">Cooling</a></li>
+            <li><a href="#case">Case</a></li>
+            <li><a href="#psu">PSU</a></li>
+            <li><a href="#motherboard">Motherboard</a></li>
+            <li><a href="#my-pc">My PC</a></li>
+            <li><a href="#survey">Quiz</a></li>
+        </ol>
+    </nav>
+</header>
 
-        <section id="cpu">
-            <h2>CPU</h2>
-            <p>A Central Processing Unit (CPU) is the brain of a computer. Most of your daily tasks are handled by a CPU. Thus, it is one of the most important components in a PC.</p>
-            <img src="images/cpu.jpg" alt="image of a cpu installed in a motherboard">
-        </section>
+<main>
+    <section id="overview">
+        <h2>Overview</h2>
+        <p>This webpage offers an introduction to the world of custom PC building. It provides a brief overview of all
+            the parts in a desktop computer.</p>
+        <p>Before we start, let's talk about the advantages of building a custom PC.</p>
+        <p>Building your own desktop PC is much cheaper than buying a prebuilt. You will be able to source everything
+            yourself and customize your desktop to your liking. You can customize every single component. If you want a
+            green case or even green braided PCIE cables, you can have them in your PC. Or, more practically, you can
+            find better performaning fans online and avoid the RGB chaos in prebuilts. </p>
+        <p>Additionally, a desktop computer is like a LEGO castle. It's not hard to build, and it's incredibly fun and
+            rewarding. You will also learn a lot about computers along the way.</p>
+        <p>Now, let's start!</p>
+    </section>
 
-        <section id="gpu">
-            <h2>GPU</h2>
-            <p>A Graphics Processing Unit (GPU) handles a computer's graphics demands. Video editing, 3D rendering, and AI training and inference are examples of heavy processes that take place on GPUs. This component is usually very expensive, so you should check out third-party price-to-performance ratio charts to help you make your decision.</p>
-            <img src="images/gpu.jpg" alt="image of a gpu with integrated fans">
-        </section>
+    <section id="cpu">
+        <h2>CPU</h2>
+        <p>A Central Processing Unit (CPU) is the brain of a computer. Most of your daily tasks are handled by a CPU.
+            Thus, it is one of the most important components in a PC.</p>
+        <img src="images/cpu.jpg" alt="image of a cpu installed in a motherboard">
+    </section>
 
-        <section id="case">
-            <h2>Case</h2>
-            <p>Everything goes in your case. Make sure to check the dimensions of your components and your dream case. Or, you can use a pair of garden shears to cut open your case to make room for your parts. But, experience tells me that's not a good idea.</p>
-            <img src="images/case.jpg" alt="image of case???">
-        </section>
-        <section id="cooling">
-            <h2>Cooling</h2>
-            <p>CPUs run hot. They can easily reach the boiling temperature of water. The solution is to attach a cooler in order to dissipate the heat. Coolers come in two kinds: air coolers and water cooler. Some may argue that there exists a third type which uses liquid nitrogen, but that's slightly beyond my budget.</p>
-            <img src="images/air_cooler.jpg" alt="image of a cpu air cooler showing its fans and fins">
-            <img src="images/aio.jpg" alt="image of an AIO (water cooler) with its water tubes in front of its fans">
-        </section>
+    <section id="gpu">
+        <h2>GPU</h2>
+        <p>A Graphics Processing Unit (GPU) handles a computer's graphics demands. Video editing, 3D rendering, and AI
+            training and inference are examples of heavy processes that take place on GPUs. This component is usually
+            very expensive, so you should check out third-party price-to-performance ratio charts to help you make your
+            decision.</p>
+        <img src="images/gpu.jpg" alt="image of a gpu with integrated fans">
+    </section>
 
-        <section id="psu">
-            <h2>Power Supply</h2>
-            <p>A power supply (PSU) takes electricty from the wall, converts it, and feed it to other components. The supported wattage of your PSU needs to be higher than the wattage requirements of all your other components combined.</p>
-            <img src="images/psu.jpg" alt="image of a power supply with cables attached">
-        </section>
+    <section id="case">
+        <h2>Case</h2>
+        <p>Everything goes in your case. Make sure to check the dimensions of your components and your dream case. Or,
+            you can use a pair of garden shears to cut open your case to make room for your parts. But, experience tells
+            me that's not a good idea.</p>
+        <img src="images/case.jpg" alt="image of case???">
+    </section>
+    <section id="cooling">
+        <h2>Cooling</h2>
+        <p>CPUs run hot. They can easily reach the boiling temperature of water. The solution is to attach a cooler in
+            order to dissipate the heat. Coolers come in two kinds: air coolers and water cooler. Some may argue that
+            there exists a third type which uses liquid nitrogen, but that's slightly beyond my budget.</p>
+        <img src="images/air_cooler.jpg" alt="image of a cpu air cooler showing its fans and fins">
+        <img src="images/aio.jpg" alt="image of an AIO (water cooler) with its water tubes in front of its fans">
+    </section>
 
-        <section id="memory">
-            <h2>Memory</h2>
-            <p>Random Access Memory (RAM) are usually in the form of memory sticks as shown. They provide faster communication with the CPU than from storage drives to CPU, so CPU would copy content from drives to RAM for faster repeated access.</p>
-            <img src="images/ram.jpg" alt="image of two sticks of RAM">
-        </section>
+    <section id="psu">
+        <h2>Power Supply</h2>
+        <p>A power supply (PSU) takes electricty from the wall, converts it, and feed it to other components. The
+            supported wattage of your PSU needs to be higher than the wattage requirements of all your other components
+            combined.</p>
+        <img src="images/psu.jpg" alt="image of a power supply with cables attached">
+    </section>
 
-        <section id="motherboard">
-            <h2>Motherboard</h2>
-            <p>The board that mothers CPU, memory sticks, CPU coolers, GPU, and SSDs. Motherboards have a lot of functions, but mainly they just connect everything together, including the case, to make a working computer.</p>
-            <img src="images/motherboard.jpg" alt="image of a motherboard???">
-        </section>
+    <section id="memory">
+        <h2>Memory</h2>
+        <p>Random Access Memory (RAM) are usually in the form of memory sticks as shown. They provide faster
+            communication with the CPU than from storage drives to CPU, so CPU would copy content from drives to RAM for
+            faster repeated access.</p>
+        <img src="images/ram.jpg" alt="image of two sticks of RAM">
+    </section>
 
-        <section id="my-pc">
-            <h2>My PC</h2>
-            <h3>Specs:</h3>
+    <section id="motherboard">
+        <h2>Motherboard</h2>
+        <p>The board that mothers CPU, memory sticks, CPU coolers, GPU, and SSDs. Motherboards have a lot of functions,
+            but mainly they just connect everything together, including the case, to make a working computer.</p>
+        <img src="images/motherboard.jpg" alt="image of a motherboard???">
+    </section>
+
+    <section id="my-pc">
+        <h2>My PC</h2>
+        <h3>Specs:</h3>
+        <div class="table-container">
             <table>
                 <tr>
                     <th>Component</th>
@@ -122,19 +142,21 @@
                     <td>Noctua 6×fans</td>
                 </tr>
             </table>
-        </section>
+        </div>
+    </section>
 
-        <section id="survey">
-            <h2>Survey</h2>
-            <h3>Tell me about your primary computer</h3>
+    <section id="survey">
+        <h2>Survey</h2>
+        <h3>Tell me about your primary computer</h3>
+        <div class="form-container">
             <form>
-                <label>Type</label>
-                <span>
-                    <label for="laptop">Laptop</label>
-                    <input type="radio" id="laptop" name="form-factor"> 
-                    <label for="pc">PC</label>
-                    <input type="radio" id="pc" name="form-factor"> 
-                </span>
+                    <span>
+                        <label>Type:</label>
+                        <label for="laptop">Laptop</label>
+                        <input type="radio" id="laptop" name="form-factor">
+                        <label for="pc">PC</label>
+                        <input type="radio" id="pc" name="form-factor">
+                    </span>
 
                 <label for="cpu-input">CPU</label>
                 <input type="text" id="cpu-input" class="text-input">
@@ -142,16 +164,23 @@
                 <input type="text" id="gpu-input" class="text-input">
                 <label for="case-input">Case</label>
                 <input type="text" id="case-input" class="text-input">
-                <label for="activation-input">Braided Cables</label>
-                <input type="checkbox" id="activation-input">
-                
-                <input type="button" value="Submit">
-            </form>
+                <span>
+                        <label for="activation-input">Braided Cables:</label>
+                        <input type="checkbox" id="activation-input" value="braided">
+                    </span>
 
-        </section>
-    </main>
-    <footer>
-        
-    </footer>
+
+                <input type="button" value="Submit" id="button-input">
+            </form>
+        </div>
+    </section>
+</main>
+<footer>
+
+</footer>
+<div class="submit-output">
+    <p>Thank you for completing the form!</p>
+    <div class="progress-bar"></div>
+</div>
 </body>
 </html>

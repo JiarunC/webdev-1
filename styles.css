@@ -1,16 +1,20 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 /*background color #282529*/
-/*text color #fffff0*/
+/*text color #fffff0 (ivory)*/
 /*header text color #fc9928*/
+/*border color: moccasin*/
+/*accent color gold*/
 body {
     background-color: #282529;
     font-family: 'Nunito', system-ui, sans-serif;
     color: ivory;
 }
+
 header {
     top: 0;
     display: flex;
@@ -53,7 +57,7 @@ header ol {
 
 header a {
     border: medium double #fffff0;
-    width:fit-content;
+    width: fit-content;
     font-size: 1.2rem;
     color: #fffff0;
     text-decoration: none;
@@ -68,7 +72,7 @@ header a:hover {
 main {
     margin-top: 8.5rem;
     margin-left: 20%;
-    margin-right:20%;
+    margin-right: 20%;
 }
 
 img {
@@ -82,60 +86,193 @@ p {
     padding: .5rem 0;
 }
 
-#my-pc h3 {
-    margin-bottom: 1rem;
+.table-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 table {
-  border-collapse: collapse;
-  font-size: 0.8rem;
-  letter-spacing: 1px;
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
 }
 
 th,
 td {
-  border: 1px solid moccasin;
-  padding: 8px 10px;
-  text-align: center;
+    border: 1px solid moccasin;
+    padding: 8px 10px;
+    text-align: center;
 }
 
 th:first-of-type, td:first-of-type {
     text-align: left;
 }
 
-
-form {
+.form-container {
     width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+    width: 80%;
+    display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: center;
     justify-content: center;
     gap: .15rem;
+    border: medium solid moccasin;
+    border-radius: .5rem;
+    padding: .5rem;
+    background: radial-gradient(farthest-corner, #282529, #3e3940);
 }
 
 label {
     font-weight: bold;
 }
 
+form span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: .5rem;
+}
+
+#laptop, #pc {
+    scale: 1.1;
+    accent-color: gold;
+}
+
 .text-input {
-    width: 50%;
+    width: 80%;
     height: 2rem;
     outline: none;
+    border-radius: 1rem;
+    margin-bottom: .5rem;
+    text-align: center;
 }
 
 .text-input:focus {
-    outline: medium solid orange; 
+    outline: medium solid gold;
+}
+
+#activation-input {
+    scale: 1.5;
+    margin-left: .5rem;
+}
+
+#button-input {
+    margin-bottom: .5rem;
+    padding: .5rem;
+    background-color: transparent;
+    color: ivory;
+    border-radius: 0.5rem;
+    border: medium double ivory;
+}
+
+#button-input:hover {
+    border: medium double gold;
+    color: gold;
+}
+
+#activation-input {
+    accent-color: gold;
+}
+
+footer {
+    height: 5rem;
+}
+
+.submit-output {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background-color: #3e3940;
+    border-radius: 0.5rem;
+    border: medium double ivory;
+}
+
+.progress-bar {
+    background-color: gold;
+    height: 3px;
     border-radius: 2px;
 }
 
-#activation-input {
-    scale: 2;
+.grass {
+    position: fixed;
+    transition: transform 9s linear;
+    background-color: transparent;
+    width: 80px;
+    height: 80px;
 }
 
-#activation-input {
+@media (max-width: 1000px) {
+    header {
+        height: 4rem;
+    }
 
+    main {
+        margin-top: 4.5rem;
+    }
+
+    nav {
+        position: fixed;
+        top: 2.5rem;
+        left: .8rem;
+        scale: .8;
+    }
+
+    header ol {
+        flex-direction: column;
+    }
+
+    header a {
+        border: medium solid #fffff0;
+    }
+
+    header a:hover {
+        border: medium solid gold;
+    }
+
+    form {
+        min-width: 400px;
+    }
 }
 
-#activation-input:checked {
-    filter: hue-rotate(180deg)
+@media (max-width: 750px) {
+    nav {
+        display: none;
+    }
+
+    h1 {
+        scale: .8;
+    }
+
+    form {
+        min-width: 240px;
+    }
+
+    main {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 670px) {
+    img {
+        width: 80%;
+    }
 }
