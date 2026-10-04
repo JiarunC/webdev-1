@@ -287,4 +287,7 @@ footer {
     img {
         width: 80%;
     }
+    .score-label {
+        display: none;
+    }
 }
