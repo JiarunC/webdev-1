@@ -13,7 +13,8 @@ const scoreContainer = document.querySelector(".score-container");
 const score = document.querySelector(".score");
 
 let outputInterval = -1;
-form.addEventListener('submit', () => {
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
     submitOutput.style.display = 'flex';
     progress = 100;
 
