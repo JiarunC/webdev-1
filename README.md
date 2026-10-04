@@ -2,7 +2,7 @@
 
 ## TODO
 
-    Fix score
+    Fix race in activation
     Fix anchors
     Check Rubrics
     Potentially add more stuff
