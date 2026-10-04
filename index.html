@@ -25,7 +25,7 @@
             <li><a href="#psu">PSU</a></li>
             <li><a href="#motherboard">Motherboard</a></li>
             <li><a href="#my-pc">My PC</a></li>
-            <li><a href="#survey">Quiz</a></li>
+            <li><a href="#survey">Survey</a></li>
         </ol>
     </nav>
 </header>
@@ -39,7 +39,7 @@
         <p>Building your own desktop PC is much cheaper than buying a prebuilt. You will be able to source everything
             yourself and customize your desktop to your liking. You can customize every single component. If you want a
             green case or even green braided PCIE cables, you can have them in your PC. Or, more practically, you can
-            find better performaning fans online and avoid the RGB chaos in prebuilts. </p>
+            find better performing fans online and avoid the RGB chaos in prebuilts. </p>
         <p>Additionally, a desktop computer is like a LEGO castle. It's not hard to build, and it's incredibly fun and
             rewarding. You will also learn a lot about computers along the way.</p>
         <p>Now, let's start!</p>
@@ -79,7 +79,7 @@
 
     <section id="psu">
         <h2>Power Supply</h2>
-        <p>A power supply (PSU) takes electricty from the wall, converts it, and feed it to other components. The
+        <p>A power supply (PSU) takes electricity from the wall, converts it, and feed it to other components. The
             supported wattage of your PSU needs to be higher than the wattage requirements of all your other components
             combined.</p>
         <img src="images/psu.jpg" alt="image of a power supply with cables attached">
@@ -159,18 +159,18 @@
                     </span>
 
                 <label for="cpu-input">CPU</label>
-                <input type="text" id="cpu-input" class="text-input">
+                <input type="text" id="cpu-input" class="text-input" required>
                 <label for="gpu-input">GPU</label>
-                <input type="text" id="gpu-input" class="text-input">
+                <input type="text" id="gpu-input" class="text-input" required>
                 <label for="case-input">Case</label>
-                <input type="text" id="case-input" class="text-input">
+                <input type="text" id="case-input" class="text-input" required>
                 <span>
                         <label for="activation-input">Braided Cables:</label>
                         <input type="checkbox" id="activation-input" value="braided">
                     </span>
 
 
-                <input type="button" value="Submit" id="button-input">
+                <input type="submit" value="Submit" id="button-input">
             </form>
         </div>
     </section>
@@ -181,6 +181,9 @@
 <div class="submit-output">
     <p>Thank you for completing the form!</p>
     <div class="progress-bar"></div>
+</div>
+<div class="score-container">
+    <span>Score: <span class="score"></span></span>
 </div>
 </body>
 </html>

@@ -128,7 +128,7 @@ form {
     align-items: center;
     justify-content: center;
     gap: .15rem;
-    border: medium solid moccasin;
+    border: medium double moccasin;
     border-radius: .5rem;
     padding: .5rem;
     background: radial-gradient(farthest-corner, #282529, #3e3940);
@@ -213,10 +213,22 @@ footer {
 
 .grass {
     position: fixed;
-    transition: transform 9s linear;
+    transition: transform 10s linear;
     background-color: transparent;
     width: 80px;
     height: 80px;
+}
+
+.score-container {
+    display: none;
+    position: fixed;
+    top: .5rem;
+    left: .5rem;
+    padding: .5rem;
+}
+
+.score {
+    font-weight: bold;
 }
 
 @media (max-width: 1000px) {
