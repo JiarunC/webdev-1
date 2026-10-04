@@ -49,6 +49,13 @@ nav {
     margin-top: 0.8rem;
 }
 
+.anchor {
+    display: block;
+    position: relative;
+    top: -10rem;
+    visibility: hidden;
+}
+
 header ol {
     display: flex;
     list-style: none;
@@ -238,6 +245,10 @@ footer {
 
     main {
         margin-top: 4.5rem;
+    }
+
+    .anchor {
+        top: -6rem;
     }
 
     nav {

@@ -106,7 +106,9 @@ activationBtn.addEventListener('click', () => {
                 clearInterval(grassSpawnInterval);
                 grassSpawnInterval = -1;
                 setTimeout(() => {
-                    scoreContainer.style.display = 'none';
+                    if (grassSpawnInterval < 0) {
+                        scoreContainer.style.display = 'none';
+                    }
                 }, 10000);
             }
         }, 1500);
