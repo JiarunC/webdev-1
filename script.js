@@ -45,7 +45,6 @@ activationBtn.addEventListener('click', () => {
         count = 0;
         scoreContainer.style.display = 'flex';
         grassSpawnInterval = setInterval(() => {
-            console.log(count)
             const grassDiv = document.createElement('div');
             body.appendChild(grassDiv);
             grassDiv.classList.add('grass');
